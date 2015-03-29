@@ -138,7 +138,12 @@ public class ConverterTest {
 
     @Test
     public void testScriptCreateTableWithKey() throws Exception {
-        loadScript("create-table-with-key.sql");
+		loadScript("create-table-with-key.sql");
+	}
+
+	@Test
+    public void testScriptCreateTableWithOnDeleteAction() throws Exception {
+        loadScript("create-table-with-constraint-on-delete.sql");
     }
 
     private void loadScript(String s) throws Exception {
